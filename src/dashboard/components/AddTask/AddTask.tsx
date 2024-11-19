@@ -16,13 +16,14 @@ interface AddTaskProps {
 }
 
 const AddTask: React.FC<AddTaskProps> = ({ showdb, toggleDataBox, dataBox, handleFormSubmit }) => {
-  return (
-    <>
+    return (
+        <>
 
-        <div className={`absolute w-full h-full flex flex-col justify-center items-center z-10 bg-[#1414146e] ${dataBox ? 'flex' : 'hidden'}`}>
-                <button onClick={toggleDataBox} className='bg-zinc-300 px-4 py-1 rounded-t-sm shodowBox'>X</button>
+            <div className={`absolute w-full h-full flex flex-col justify-center items-center z-10 bg-[#1414146e] ${dataBox ? 'flex' : 'hidden'}`}>
 
                 <form onSubmit={handleFormSubmit} className='relative w-96 h-auto flex flex-col gap-4 p-8 bg-zinc-300 rounded-xl shodowBox'>
+                    <button onClick={toggleDataBox} className='bg-zinc-300 px-4 py-1 rounded-full border absolute right-5 top-5'>X</button>
+
                     <div className='flex flex-col'>
                         <label htmlFor="title">Title</label>
                         <input type="text" name='title' className='bg-white p-2 w-full rounded-lg mt-1 outline-none' required />
@@ -58,8 +59,8 @@ const AddTask: React.FC<AddTaskProps> = ({ showdb, toggleDataBox, dataBox, handl
                 </form>
             </div>
 
-    </>
-  )
+        </>
+    )
 }
 
 export default AddTask

@@ -1,8 +1,8 @@
 import React from 'react';
 import type { NextPage } from 'next';
 
-import IndexView from '@/src/index/View/IndexView';
 import { IndexController } from '@/src/index/controller/IndexController';
+import IndexView from '@/src/index/views/IndexView';
 
 
 const IndexPage: NextPage = (props) => (

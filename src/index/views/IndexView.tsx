@@ -20,13 +20,13 @@ const IndexView = () => {
   };
 
   const toggleDB = () => {
-    router.push('/Dashboard');
+    router.push('/dashboard');
   };
 
   return (
     <div id='bgLightNormal' className='w-full h-full flex flex-row'>
 
-      <div className='h-screen w-4/12 bg-[#F1F1FB] flex flex-col items-center py-4 border-r-2 border-zinc-300'>
+      <div className='h-screen w-5/12 bg-[#F1F1FB] flex flex-col items-center py-4 border-r-2 border-zinc-300'>
 
         <div className='py-10 flex flex-row items-center justify-center gap-2'>
           <div className='w-16 h-16 bg-white rounded-lg'></div>
@@ -63,7 +63,7 @@ const IndexView = () => {
         </div>
       </div>
 
-      <div className='h-screen w-auto bg-[#F1F1FB] flex flex-col pt-12 px-16'>
+      <div className='h-screen w-7/12 bg-[#F1F1FB] flex flex-col pt-12 px-16'>
 
         <div className='flex flex-col gap-12'>
           <h3 className='text-2xl font-bold text-[#222A51]'>Tasks Dashboard</h3>
